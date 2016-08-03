@@ -1,7 +1,7 @@
 /*
     Program Name:   Seminole Weather Channel
-    Author: 
-    Date: 
+    Author: Sydney Vincent
+    Date: August 1, 2016
     Filename:   apixu_forecast.js
 */
 
@@ -33,7 +33,7 @@
                  (https://www.apixu.com)
                  Use the following code as an example:
                    
-                     url: 'https://api.apixu.com/v1/forecast.json?key=ADD_YOUR_API_KEY_HERE',
+                     url: 'https://api.apixu.com/v1/forecast.json?key=d0e7d16ae9e04bedbc5173915160108',
                      
                      
                 IMPORTANT:  Before proceeding to Activity 2, save your Cloud9 workspace and preview this application 
@@ -88,8 +88,22 @@
                      $('#Day1High').html("<center>" + json.forecast.forecastday[0].day.maxtemp_f + "</center>");
                      $('#Day2Low').html("<center>" + json.forecast.forecastday[1].day.mintemp_f + "</center>");
                      $('#Day2High').html("<center>" + json.forecast.forecastday[1].day.maxtemp_f + "</center>");        
-
-                     
+                     $('#Day3Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day3High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day4Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day4High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day5Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day5High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day6Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day6High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day7Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day7High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day8Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day8High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day9Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day9High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day10Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day10High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
                 })
                 .fail(function() {
                       alert("Posting failed.");              
